@@ -13,7 +13,7 @@ duplicateCharMinCount("What about a longer string?", 3) // ["a", "t", " "]
 
 function duplicateCharMinCount(string, minCount) {
 
-	const countObj = string.split("").reduce((accum, ele)=>{ //use reduce to create our counter object (see line 20)
+	const countObj = string.split("").reduce((accum, ele)=>{ //use reduce to create our counter object (see line 20) by splitting string into an array on every character
 		if (accum[ele]) accum[ele]++ //if accum has defined key of current element, increment by 1
 		else accum[ele] = 1 //otherwise establish that key with value of 1
 		return accum //return accumulator for next iteration
