@@ -14,11 +14,11 @@ console.log(cat); // { name: "Willie", color: "orange", toy: "yarn" }
 ***********************************************************************/
 
 function keyAdderUniqueVal(object, key, value) {
-	const vals =  Object.values(object)
-	if (vals.includes(value)) return object
-	else {
-		object[key] = value
-		return object;
+	const vals =  Object.values(object)  //make an array of values
+	if (vals.includes(value)) return object //if that array has the value specified as a parameter, return obj as is
+	else {  //otherwise
+		object[key] = value //add key value pair to that object
+		return object; //return object with new key value pair
 	}
 }
 

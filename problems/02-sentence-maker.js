@@ -12,6 +12,7 @@ sentenceMaker('The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'd
 ***********************************************************************/
 
 // your code here
+//                  take in all the words   join em with spaces, concat ! at the end, implicitly return the result
 const sentenceMaker = (...words) => words.join(" ") + "!"
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

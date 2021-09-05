@@ -19,7 +19,11 @@ const facebookUsers = [
 filterUserProfiles(facebookUsers, (user) => user.age > 30); // ["Mary", "Judy", "Mike"]
 filterUserProfiles(facebookUsers, (user) => user.state === "New York"); // ["Mike"]
 ***********************************************************************/
+//               stuff is our array cb is our callback |
+//                            any element passed into our cb that is truthy gets added to result array |
+//                                          we then map through that array of objects, returning a new array of just the values of the name key in those objects
 const filterUserProfiles = (stuff, cb) => stuff.filter(e => cb(e)).map(e=> e.name)
+
 // your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

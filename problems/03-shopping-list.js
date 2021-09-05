@@ -19,11 +19,11 @@ console.log(clothesList); // ['tshirt', 'pants']
 
 ***********************************************************************/
 
-function shoppingList(list) {
-
-  return (next) => {
-    list.push(next)
-    return list
+function shoppingList(list) { //take in a list when first invoked
+0
+  return (next) => { //return a function that will take the next item when invoked
+    list.push(next) //add that next item to the original list
+    return list //return list with that next item added
   }
 
 }
